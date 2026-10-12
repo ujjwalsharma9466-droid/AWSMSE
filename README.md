@@ -72,8 +72,11 @@ The Print Receipt button calls `printReceipt()`, which uses `window.print()`. A 
 - Connect a backend such as Node.js, PHP or a database to store the form data
 - Add a BMI calculator and a login page
 
+## Link
+awsmse.vercel.app
+
 ## Author
 
-Name: ______________________
-Roll Number: ______________________
-Course: ______________________
+Name: UJJWAL SHARMA
+Roll Number: 2630btech0084
+Course: Btech AIML

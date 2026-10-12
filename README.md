@@ -44,8 +44,12 @@ fitness-basic/
 When the user fills the contact form and clicks Submit, the `printForm()` function in `script.js`:
 
 1. Reads the name, email and plan using `document.getElementById(...).value`
-2. Writes them into the `<div id="output">` using `innerHTML`
-3. Returns `false` so the page does not reload and the output stays visible
+2. Finds the price of the chosen plan using if/else
+3. Creates a random receipt number and today's date
+4. Writes the receipt into the `<div id="output">` using `innerHTML`
+5. Returns `false` so the page does not reload and the receipt stays visible
+
+The Print Receipt button calls `printReceipt()`, which uses `window.print()`. A `@media print` rule in `style.css` hides everything except the receipt, so only the receipt is printed.
 
 ## Features
 
@@ -54,7 +58,7 @@ When the user fills the contact form and clicks Submit, the `printForm()` functi
 - Flexbox layout for the cards
 - Hover effects on links, buttons and cards
 - Responsive layout for small screens using a media query
-- Form that prints the entered details
+- Form that shows a receipt with a Print Receipt button
 
 ## Limitations
 

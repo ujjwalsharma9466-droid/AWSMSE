@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IronPulse Fitness</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>IronPulse Fitness</h1>
+  <nav>
+    <a href="#plans">Workout Plans</a>
+    <a href="#programs">Programs</a>
+    <a href="#membership">Membership</a>
+    <a href="#health">Health Info</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Get Stronger. Get Healthier.</h2>
+  <p>Join IronPulse Fitness for workout plans, fitness programs and expert advice for every level.</p>
+  <a href="#membership" class="button">View Membership Plans</a>
+</section>
+
+<section id="plans">
+  <h2>Workout Plans</h2>
+  <div class="box-container">
+    <div class="box">
+      <h3>Beginner Plan</h3>
+      <ul>
+        <li>3 days a week</li>
+        <li>Full body workout</li>
+        <li>Walking and stretching</li>
+        <li>40 minutes per session</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Weight Loss Plan</h3>
+      <ul>
+        <li>5 days a week</li>
+        <li>Cardio and circuit training</li>
+        <li>Diet guidance</li>
+        <li>45 minutes per session</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Muscle Building Plan</h3>
+      <ul>
+        <li>4 days a week</li>
+        <li>Weight training</li>
+        <li>High protein diet chart</li>
+        <li>60 minutes per session</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Weekly Schedule (Beginner)</h3>
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>Workout</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>Full body</td>
+      <td>40 minutes</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>Walking and core</td>
+      <td>30 minutes</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>Full body</td>
+      <td>40 minutes</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>Rest</td>
+      <td>-</td>
+    </tr>
+  </table>
+</section>
+
+<section id="programs">
+  <h2>Fitness Programs</h2>
+  <div class="box-container">
+    <div class="box">
+      <h3>Yoga</h3>
+      <p>Improves flexibility, posture and mental calm. Every Saturday, 8 AM.</p>
+    </div>
+    <div class="box">
+      <h3>Zumba</h3>
+      <p>Fun dance workout that burns calories. Tuesday and Thursday, 6 PM.</p>
+    </div>
+    <div class="box">
+      <h3>HIIT</h3>
+      <p>Short and intense intervals for fat loss. Monday and Wednesday, 7 AM.</p>
+    </div>
+    <div class="box">
+      <h3>Power Lifting</h3>
+      <p>Build strength with proper lifting technique. Friday, 6 AM.</p>
+    </div>
+  </div>
+</section>
+
+<section id="membership">
+  <h2>Membership Plans</h2>
+  <table>
+    <tr>
+      <th>Plan</th>
+      <th>Price per Month</th>
+      <th>Facilities</th>
+    </tr>
+    <tr>
+      <td>Basic</td>
+      <td>Rs. 999</td>
+      <td>Gym access, locker room</td>
+    </tr>
+    <tr>
+      <td>Standard</td>
+      <td>Rs. 1799</td>
+      <td>Gym access, group classes, workout plan</td>
+    </tr>
+    <tr>
+      <td>Premium</td>
+      <td>Rs. 3499</td>
+      <td>All facilities, personal trainer, diet plan</td>
+    </tr>
+  </table>
+</section>
+
+<section id="health">
+  <h2>Health Information</h2>
+  <ul>
+    <li>Drink 2 to 3 litres of water every day.</li>
+    <li>Sleep for 7 to 8 hours to help your body recover.</li>
+    <li>Eat protein, fruits and vegetables in every day's meals.</li>
+    <li>Take one or two rest days every week.</li>
+    <li>Warm up before exercise and stretch after it.</li>
+  </ul>
+
+  <h3>BMI Calculator</h3>
+  <div class="form-box">
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight">
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height">
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="return checkForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <label for="email">Email:</label>
+    <input type="text" id="email">
+    <label for="plan">Choose a plan:</label>
+    <select id="plan">
+      <option>Basic</option>
+      <option>Standard</option>
+      <option>Premium</option>
+    </select>
+    <button type="submit">Submit</button>
+    <p id="formMessage"></p>
+  </form>
+</section>
+
+<footer>
+  <p>IronPulse Fitness, Aligarh, Uttar Pradesh</p>
+  <p>&copy; 2026 IronPulse Fitness. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
